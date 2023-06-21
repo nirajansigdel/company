@@ -1,0 +1,10 @@
+:root{
+    --primary: #D3E7FF;
+    --secondary:linear-gradient(284.37deg, #2B438B -3.57%, #4664BF 121.05%);
+    --hovercolor: linear-gradient(280.37deg, #141c34 -3.57%, #4664BF 117.05%);
+    --fontcolor:black;
+    --textcolor:white;
+    --fontfamily:'Poppins'; 
+    --dimcolor:#898080;
+
+}

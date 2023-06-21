@@ -1,0 +1,53 @@
+ @import url(../../../var/var.css);
+ .containers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6.2%  ;
+    width: 95%;
+  
+
+}
+.containers .body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+
+}
+.reset_gif{
+    width:45rem;
+    height: 70vh;
+} 
+.reset_gif img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
+ .employer_Reset_button{
+width: 70%;
+align-items: center;
+ justify-content: center;
+
+} 
+
+
+ 
+.employer_Reset_button button {
+    width: 100%;
+    height: 5vh;
+    background: var(--secondary);
+    stroke: none;
+    color: var(--textcolor);
+    font-size: medium;
+    font-weight: 400px;
+    border: none;
+    border-radius:0.3rem
+  }
+  
+  .employer_Reset_button button:hover {
+    background: var(--hovercolor)  !important;
+  }

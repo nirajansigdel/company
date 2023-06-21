@@ -1,0 +1,27 @@
+@import url('../../var/var.css');
+
+.contents{
+    width:30rem;
+   
+}
+.content-bodys{
+    display: flex;
+   width:100%;
+   justify-content: space-between;
+   margin: 4% 0;
+}
+
+.contents .content-bodys .names{
+font-family: 'Poppins';
+font-weight: 400;
+font-size:1.4rem;
+color:var(--fontcolor);
+}
+.add_see{
+    display: flex;
+    width: 17%;
+    justify-content: space-between;
+}
+.add,.view{
+    cursor: pointer;
+}

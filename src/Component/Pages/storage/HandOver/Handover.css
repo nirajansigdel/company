@@ -1,0 +1,8 @@
+@import url(../../../var/var.css);
+
+.temporary-cell{
+    background:var(--hovercolor);
+}
+.permanent-cell{
+    background-color:green;
+}

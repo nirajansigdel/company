@@ -1,0 +1,42 @@
+@import url('../var/var.css');
+
+.body {
+    display: flex;
+    gap: 20%;
+}
+
+.grandchild {
+    width: 35%;
+    height: 80vh;
+    background-color: #2C3A64;
+    border-radius: 1%;
+
+}
+
+.grandchild_body {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    width: 100%;
+}
+
+.grandchild_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    color: var(--textcolor);
+    background-color: #495883;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: none;
+}
+
+.grandchild_item {
+    width: 95%;
+}
+
+.active {
+    background-color: cadetblue;
+
+}
