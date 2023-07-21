@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../../Commancss/Main2.css'
 import View from '../View';
-import Nav from '../../../Navbar/Nav';
+import Layout from "../../../layout/Layout"
 
 export default function Corporate() {
   const [activestate, setactivestate] = useState('view')
@@ -12,8 +12,8 @@ export default function Corporate() {
 
 
   return (
+    <Layout>
     <div className="main">
-      <Nav/>
       <div className="container">
         <div className="body">
           <div className="grandchild">
@@ -39,6 +39,7 @@ export default function Corporate() {
             </div>
           </div>
         </div>
+        </Layout>
       );
 }
 

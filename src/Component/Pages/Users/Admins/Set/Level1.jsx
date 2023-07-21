@@ -62,9 +62,6 @@ function Level1() {
       <div className="admin_body">
         <div className="admin_profile">
           <div className="user">
-            <div className="backbutton">
-              Level1
-            </div>
             <div className="userdescription">
               <div className="userimage">
                 <img src={user} alt="image" />
@@ -86,7 +83,7 @@ function Level1() {
               />
             </div>
             <div className="inputsection">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">Password</label> 
               <input
                 type="password"
                 name="password"

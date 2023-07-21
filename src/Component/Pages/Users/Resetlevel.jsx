@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import '../../Commancss/Main2.css'
-import Nav from '../../Navbar/Nav';
 import ResetLevel1 from './Admins/Resetpassword/Resetlevel1';
 import ResetLevel2 from './Admins/Resetpassword/Resetlevel2';
 import ResetLevel3 from './Admins/Resetpassword/Resetlevel3';
 import ResetLevel4 from './Admins/Resetpassword/Resetlevel4';
-import { Link } from 'react-router-dom';
+import Layout from '../../layout/Layout';
 
 export default function Resetlevel() {
   const [activeLevel, setActiveLevel] = useState('Resetlevel1');
@@ -15,8 +14,8 @@ export default function Resetlevel() {
   };
 
   return (
+    <Layout>
     <div className="main">
-      <Nav />
       <div className="container">
         <div className="body">
           <div className="grandchild">
@@ -62,5 +61,6 @@ export default function Resetlevel() {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }

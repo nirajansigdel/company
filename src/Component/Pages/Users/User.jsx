@@ -3,13 +3,14 @@ import React from 'react'
 import {  FaUser } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Nav from '../../Navbar/Nav';
+import Layout from '../../layout/Layout';
 export default function User() {
   return (
-    <div className="main">
-       <Nav/> 
+    <Layout>
+       <div className="main">
     <div className='container'>
       <div className="child_card">
-          <Link to='/admin' className="cards">
+          <Link to='/setlevel' className="cards">
             <div className="card_items">
           <div className="icon"><FaUser/></div>
           <div className="name">Admin</div>
@@ -28,5 +29,7 @@ export default function User() {
 
         </div>
     </div>
+    </Layout>
+   
   )
 }

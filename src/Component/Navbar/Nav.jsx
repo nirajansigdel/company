@@ -2,16 +2,22 @@ import React from "react";
 import "./Nav.css";
 import User from "./User.JPG";
 import {
+  FaArrowAltCircleRight,
   FaBuilding,
   FaFileArchive,
   FaHome,
-  FaPaperPlane,
   FaStoreAlt,
   FaUser,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Nav() {
+  const confirmlogout=()=>{
+   const shouldlogout=window.confirm("Do you want to logout?")
+   if(shouldlogout){
+    window.location.href="/login"
+   }
+  }
   return (
     <div className="navbar">
       <div className="logo">
@@ -20,67 +26,49 @@ export default function Nav() {
       <div className="navitem">
         <ul>
           <li>
-            <Link to="/">
-              Home{" "}
-              <div className="iconss">
-                <FaHome />
-              </div>
+            <Link to="/home" className="link-class">
+              Home
             </Link>
           </li>
           <li>
-            <Link to="/user">
+            <Link to="/user" className="link-class">
               User
-              <div className="iconss">
-                <FaUser />
-              </div>
+            
             </Link>
           </li>
           <li>
-            <Link to="/organization">
+            <Link to="/organization" className="link-class">
               Organization
-              <div className="iconss">
-                <FaBuilding />
-              </div>
+          
             </Link>
           </li>
           <li>
-            <Link to="/darta">
+            <Link to="/darta" className="link-class">
               Darta
-              <div className="iconss">
-                <FaFileArchive />
-              </div>
+              
             </Link>
           </li>
           <li>
-            <Link to="/chalani">
+            <Link to="/chalani" className="link-class">
               Chalani
-              <div className="iconss">
-                <FaFileArchive />
-              </div>
+            
             </Link>
           </li>
           <li>
-            <Link to="/storage">
+            <Link to="/storage" className="link-class">
               Storage
-              <div className="iconss">
-                <FaStoreAlt />
-              </div>
+             
             </Link>
           </li>
           <li>
-            <Link to="./">
+            <Link to="./" className="link-class">
               Report
-              <div className="iconss">
-                <FaStoreAlt />
-              </div>
             </Link>
           </li>
           <li>
-            <Link to="./">
+            <Link to="./" className="link-class">
               Other
-              <div className="iconss">
-                <FaFileArchive />
-              </div>
+
             </Link>
           </li>
         </ul>
@@ -96,14 +84,12 @@ export default function Nav() {
             </div>
           </div>
           <div className="admin">
-            Logged in as an <a href="">admin</a>
+            <a href="">admin</a>
+             Log in
           </div>
         </div>
         <div className="menu_icon">
-          <Link to="/login">
-            {" "}
-            <FaStoreAlt />
-          </Link>
+            <FaArrowAltCircleRight className="arrowicon" onClick={confirmlogout} />
         </div>
       </div>
     </div>

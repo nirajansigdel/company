@@ -3,11 +3,12 @@ import reset from './resetbutton.gif'
 import './Employer.css'
 import { Link } from 'react-router-dom'
 import Nav from '../../../Navbar/Nav'
+import Layout from '../../../layout/Layout'
 
 export default function Employer() {
   return (
+    <Layout>
     <div className='main'>
-      <Nav />
       <div className="containers">
         <div className="body">
          <div className="reset_gif">
@@ -23,5 +24,6 @@ export default function Employer() {
 
 
     </div>
+    </Layout>
   )
 }

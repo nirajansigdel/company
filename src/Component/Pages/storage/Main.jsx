@@ -3,10 +3,11 @@ import { FaStoreAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import '../../Commancss/Main.css'
 import Nav from '../../Navbar/Nav';
+import Layout from '../../layout/Layout';
 export default function Storage() {
   return (
-    <div className="main">
-      <Nav/>
+    <Layout>
+       <div className="main">
       <div className='container'>
         <div className="child_card">
           <div className="cards">
@@ -33,5 +34,7 @@ export default function Storage() {
 
       </div>
     </div>
+    </Layout>
+   
   )
 }

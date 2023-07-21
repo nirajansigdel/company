@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaBackspace, FaPlusSquare } from "react-icons/fa";
 import Nav from '../../Navbar/Nav';
 import '../Darta/darta_chalani.css'
+import Layout from '../../layout/Layout';
 
 
 export default function Chalani() {
@@ -51,8 +52,8 @@ export default function Chalani() {
   }
 
   return (
-    <div className='main'>
-      <Nav />
+    <Layout>
+       <div className='main'>
       <div className="container">
         <div className="add">
           <button onClick={toggleform}>
@@ -158,5 +159,7 @@ export default function Chalani() {
         )}
       </div>
     </div>
+    </Layout>
+   
   );
 }

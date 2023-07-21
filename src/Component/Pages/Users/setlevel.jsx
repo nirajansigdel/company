@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../../Commancss/Main2.css'
-import Nav from '../../Navbar/Nav';
+import Layout from "../../layout/Layout"
 import Level1 from './Admins/Set/Level1';
 import Level2 from './Admins/Set/Level2';
 import Level3 from './Admins/Set/Level3';
@@ -14,9 +14,9 @@ export default function Setlevel() {
   };
 
   return (
-    <div className="main">
-      <Nav /> 
-      <div className="container">
+    <Layout>
+     <div className="main">
+     <div className="container">
         <div className="body">
           <div className="grandchild">
             <div className="grandchild_body">
@@ -61,5 +61,6 @@ export default function Setlevel() {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }

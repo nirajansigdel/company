@@ -21,25 +21,22 @@ function App() {
 
     <BrowserRouter>
       <Routes>
-        <Route exact path="" element={<Registration />}></Route>
+        <Route exact path="/" element={<Registration />}></Route>
          <Route exact path="/login" element={<Login />}></Route> 
         <Route exact path="/home" element={<Home />}></Route>
-        <Route exact path="user" element={<User />}></Route>
-        <Route exact path="employer" element={<Employer />}></Route>
-        <Route exact path="admin" element={<Setlevel />}></Route>
-        <Route exact path="reset" element={<Resetlevel />}></Route>
-        <Route exact path="organization" element={<Organization />}></Route>
-        <Route exact path="corporate" element={<Corporate />}></Route>
-        <Route exact path="Branch" element={<Corporate />}></Route>
-        <Route exact path="View" element={<View />}></Route>
-        <Route exact path="darta" element={<Darta />}></Route>
-        <Route exact path="chalani" element={<Chalani />}></Route>
-        <Route exact path="storage" element={<Storage />}></Route>
-        <Route exact path="bulk" element={<Bulk />}></Route>
-        <Route exact path="handover" element={<Handover />}></Route>
-
-
-
+        <Route exact path="/user" element={<User />}></Route>
+        <Route exact path="/employer" element={<Employer />}></Route>
+        <Route exact path="/setlevel" element={<Setlevel />}></Route>
+        <Route exact path="/reset" element={<Resetlevel />}></Route>
+        <Route exact path="/organization" element={<Organization />}></Route>
+        <Route exact path="/corporate" element={<Corporate />}></Route>
+        <Route exact path="/Branch" element={<Corporate />}></Route>
+        <Route exact path="/View" element={<View />}></Route>
+        <Route exact path="/darta" element={<Darta />}></Route>
+        <Route exact path="/chalani" element={<Chalani />}></Route>
+        <Route exact path="/storage" element={<Storage />}></Route>
+        <Route exact path="/bulk" element={<Bulk />}></Route>
+        <Route exact path="/handover" element={<Handover />}></Route>
       </Routes>
       <div className="App">
 

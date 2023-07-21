@@ -1,15 +1,16 @@
 @import url('../var/var.css');
 
 .body {
+    
     display: flex;
     gap: 20%;
 }
 
 .grandchild {
-    width: 35%;
-    height: 80vh;
+    width: 45%;
     background-color: #2C3A64;
     border-radius: 1%;
+    padding-bottom: 2;
 
 }
 
@@ -24,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8vh;
+    padding: 1.7rem 0;
     color: var(--textcolor);
     background-color: #495883;
     border-radius: 0.2rem;

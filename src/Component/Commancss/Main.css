@@ -1,4 +1,5 @@
 @import url('../var/var.css');
+
 .container .child_card,.card_items{
     display: flex;
     flex-direction: column;

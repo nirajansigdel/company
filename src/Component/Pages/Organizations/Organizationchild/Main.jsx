@@ -4,10 +4,11 @@ import '../../../Commancss/Main.css'
 import { FaBuilding } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Nav from '../../../Navbar/Nav';
+import Layout from '../../../layout/Layout';
  export default function Organization() {
   return (
-    <div className="main">
-      <Nav/>
+    <Layout>
+       <div className="main">
     <div className='container'>
       <div className="child_card">
        <Link  to='/corporate' className="cards" >
@@ -34,6 +35,8 @@ import Nav from '../../../Navbar/Nav';
 
         </div>
     </div>
+    </Layout>
+   
   )
  }
 

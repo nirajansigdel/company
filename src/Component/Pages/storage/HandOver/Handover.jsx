@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Nav from '../../../Navbar/Nav';
 import './Handover.css';
+import Layout from '../../../layout/Layout';
 
 export default function Handover() {
     const [getinput, setinput] = useState({
@@ -53,8 +54,8 @@ export default function Handover() {
     };
 
     return (
+       < Layout>
         <div className='main'>
-            <Nav />
             <div className='container'>
                 <div className='temporarybody'>
                     <div className='temporarybody_contain'>
@@ -169,5 +170,6 @@ export default function Handover() {
                 </table>
             </div>
         </div>
+        </Layout>
     );
 }

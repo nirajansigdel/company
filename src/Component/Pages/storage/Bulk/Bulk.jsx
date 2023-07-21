@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Nav from "../../../Navbar/Nav";
+import Layout from "../../../layout/Layout";
 
 function Bulk() {
   const [selectedFloors, setSelectedFloors] = useState(null);
@@ -5724,9 +5725,8 @@ function Bulk() {
 
   console.log(selectedFloors, selectedRooms, selectedRacks,selectedShelves,selectedFileNames,selectedFileNo);
   return (
-    <>
-    <div className="main">
-    <Nav/>
+    <Layout>
+    <div className="main"> 
         <div className="container">
 
         {/* =======================for floor=================== */}
@@ -5795,7 +5795,7 @@ function Bulk() {
       </div>
       </div>
       </div>
-    </>
+    </Layout>
   );
 }
 

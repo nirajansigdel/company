@@ -3,6 +3,7 @@ import './Home.css'
 import { FaBuilding, FaFile, FaFileAlt, FaStoreAlt, FaUser } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Nav from '../../Navbar/Nav';
+import Layout from '../../layout/Layout';
 export const Home = () => {
     const demo = [{
         id: 1,
@@ -49,8 +50,8 @@ export const Home = () => {
         to: "/user",
     }]
     return (
-        <div className='main'>
-            <Nav />
+        <Layout>
+              <div className='main'>
             {/*=================== container (dashboard)==================== */}
             <div className="container">
                 {/*=================== dashboard(description,card)==================== */}
@@ -58,16 +59,20 @@ export const Home = () => {
                 <div className="dashboard">
                     {/*=================== start of description==================== */}
                     <div className="description">
-                        <span className='verification'>Kyc verification for</span>
-                        <span className='choosefor'>Choose the appropriate option for your kyc verification type</span>
+
+                        <span className='choosefor'>Choose the appropriate option </span>
                     </div>
                     {/*=================== start of card==================== */}
                     <div className="card">
                         <div className="card_body">
                             {
                                 demo.map(demo => (
-                                    <Link to={demo.to ? demo.to : ""}>
-                                        <div className="card_item" key={demo.id}>
+                                    <Link
+                                    to={demo.to ? demo.to : ""}
+                                    key={demo.id}
+                                    // style={{ textDecoration: 'none', color: 'inherit' }}
+                                  >
+                                        <div className="card_item" >
                                             <div className="card_content">
                                                 <div className="icon">
                                                     {demo.icon}
@@ -93,5 +98,7 @@ export const Home = () => {
 
 
         </div>
+        </Layout>
+      
     )
 }
