@@ -67,7 +67,7 @@ export default function Registration() {
             <div className="inputsection">
               <label htmlFor="email">Email</label>
               <input
-                type="text"
+                type=""
                 name="email"
                 value={getemail}
                 onChange={(e) => setemail(e.target.value)}
@@ -77,7 +77,7 @@ export default function Registration() {
             <div className="inputsection">
               <label htmlFor="name">Username</label>
               <input
-                type="text"
+                type=""
                 name="name"
                 value={getusername}
                 onChange={(e) => setusername(e.target.value)}

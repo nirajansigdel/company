@@ -1,7 +1,7 @@
 @import url('../../var/var.css');
 
 .main .container {
-    margin: 1%;
+    margin: 0  1% 0 0;
     display: flex;
     flex-direction: column;
 }

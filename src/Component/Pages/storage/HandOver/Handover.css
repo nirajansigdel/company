@@ -1,4 +1,5 @@
 /* Handover.css */
+@import url('../../../var/var.css');
 .main {
     display: flex;
     justify-content: center;
@@ -18,7 +19,7 @@
   
 
   .temporarybody_contain {
-    padding-top: 0.5%;
+    padding-top: 1%;
     display: flex;
     flex-direction: column;
  
@@ -79,7 +80,7 @@
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
- 
+    border: 1px solid #ddd;
   }
   
   thead {
@@ -92,6 +93,7 @@
   td {
     padding: 10px;
     text-align: center;
+    border: 1px solid #ddd;
    
   }
   

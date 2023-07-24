@@ -43,7 +43,7 @@ export default function Login() {
             <div className="inputsection">
               <label htmlFor="name">Username</label>
               <input
-                type="text"
+                type=""
                 name="name"
                 value={getusername}
                 onChange={(e) => setusername(e.target.value)}
