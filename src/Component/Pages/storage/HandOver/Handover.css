@@ -1,8 +1,112 @@
-@import url(../../../var/var.css);
+/* Handover.css */
+.main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container{
+    padding: 5% 2% ;
+    width: 100%;
+    border-radius: 8px;
 
-.temporary-cell{
-    background:var(--hovercolor);
-}
-.permanent-cell{
-    background-color:green;
-}
+
+  }
+  input:focus{
+    outline: none;
+  }
+  
+
+  .temporarybody_contain {
+    padding-top: 0.5%;
+    display: flex;
+    flex-direction: column;
+ 
+ align-items: center;
+    justify-content: center;
+    background:var(--secondary);
+    padding-bottom: 1%;
+    
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type='text'],
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 40rem;
+    align-items: flex-start;
+    
+    
+  }
+  
+  label {
+    font-size: 14px;
+    color: var(--fontcolor);
+  }
+  
+  .applybutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .sumbit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+ 
+  }
+  
+  thead {
+    background:var(--textcolor);
+    margin:1%
+    ;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: center;
+   
+  }
+  
+  .temporary-cell {
+    background:var(--secondary);
+  }
+  
+  .permanent-cell {
+    background-color: green;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    .temporarybody_contain {
+      grid-template-columns: 1fr;
+    }
+  }
+  

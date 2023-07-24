@@ -4,6 +4,27 @@ import './Handover.css';
 import Layout from '../../../layout/Layout';
 
 export default function Handover() {
+    const isAllFieldsFilled = () => {
+        const { date, fname, handovertype, remployer, gemployer, approved, remark } = getinput;
+        return date && fname && handovertype && remployer && gemployer && approved && remark;
+    };
+    const submitHandler = () => {
+        if (isAllFieldsFilled()) {
+            console.log(getinput);
+            setSubmittedData([...submittedData, getinput]);
+            setinput({
+                fname: '',
+                handovertype: '',
+                date: '',
+                remployer: '',
+                gemployer: '',
+                approved: '',
+                remark: '',
+            });
+        } else {
+            alert('Please fill in all the required fields.');
+        }
+    };
     const [getinput, setinput] = useState({
         date: '',
         fname: '',
@@ -29,29 +50,7 @@ export default function Handover() {
         return dateObj instanceof Date && !isNaN(dateObj);
     };
 
-    const submitHandler = () => {
-        // if (
-        //   getinput.fname.length === 4 &&
-        //   getinput.handovertype &&
-        //   getinput.date &&
-        //   isValidDate(getinput.date)
-        // ) {
-        console.log(getinput);
-        setSubmittedData([...submittedData, getinput]);
-        setinput({
-            fname: '',
-            handovertype: '',
-            date: '',
-            remployer: '',
-            gemployer: '',
-            approved: '',
-            remark: '',
-
-        });
-        // } else {
-        //   alert('Please fill in all the required fields correctly');
-        // }
-    };
+ 
 
     return (
        < Layout>
@@ -132,13 +131,14 @@ export default function Handover() {
                                 onChange={inputhandler}
                             />
                         </div>
-
-                    </div>
-                    <div className='applybutton'>
+                        <div className='applybutton'>
                         <button className='sumbit' onClick={submitHandler}>
                             Submit
                         </button>
                     </div>
+
+                    </div>
+                 
                 </div>
 
                 <table border={1}>

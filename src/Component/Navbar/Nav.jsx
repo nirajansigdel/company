@@ -3,11 +3,6 @@ import "./Nav.css";
 import User from "./User.JPG";
 import {
   FaArrowAltCircleRight,
-  FaBuilding,
-  FaFileArchive,
-  FaHome,
-  FaStoreAlt,
-  FaUser,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -75,23 +70,29 @@ export default function Nav() {
       </div>
       <div className="user_menu">
         <div className="user">
-          <div className="image_user">
+        <div className="image_user">
             <div className="image">
               <img src={User} alt="" />
             </div>
             <div className="user">
               <h4>User name</h4>
             </div>
+            <div className="menu_icon">
+            <FaArrowAltCircleRight className="arrowicon" onClick={confirmlogout} />
+        </div>
           </div>
           <div className="admin">
-            <a href="">admin</a>
+            <a href="#">admin</a>
              Log in
           </div>
         </div>
-        <div className="menu_icon">
-            <FaArrowAltCircleRight className="arrowicon" onClick={confirmlogout} />
+        
+          <div className="logout">
+            <span onClick={confirmlogout} >Log Out</span>
+          </div>
+
         </div>
+       
       </div>
-    </div>
   );
 }
