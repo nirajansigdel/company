@@ -43,7 +43,15 @@
 }
 
 .navbar .navitem ul li a:hover {
-    color: var(--dimcolor);
+    text-shadow: 0.7px 0px var(--dimcolor);
+
+    
+}
+.link-class.active {
+    color: var(--textcolor);
+    background:var(--primary);
+    text-shadow: 0.7px 0px var(--dimcolor);
+    border-bottom: 3px solid var(--fontcolor);
 }
 
 /* =======loginandlogout======= */
@@ -54,6 +62,7 @@
     flex-direction: column;
 }
 
+  
 .login_logout .Logoutdiv button {
     background: var(--secondary);
     width: 100%;

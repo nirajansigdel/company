@@ -68,7 +68,7 @@ export default function Darta() {
     <div className="container">
       <div className="search_add">
         <div className='searching'>
-          <input type="text" placeholder='Searching' />
+          <input type="text" placeholder='Searching' className='input'/>
           <button className='serching_done'>Search</button>
         </div>
         <div className="addlist">
@@ -123,13 +123,12 @@ export default function Darta() {
       {showForm && (
         <div className="popup">
           <div className="popup-content">
-            <form onSubmit={(e) => e.preventDefault()}>
-              <div className="cancel" onClick={toggleform}>
-                <button>cancle</button>
-                {/* <FaBackspace className='icon' /> */}
-              </div>
+            <form onSubmit={(e) => e.preventDefault()}>  
+            <div className="cancelbutton">
+                <button  onClick={toggleform}>cancel</button>
+                </div>   
+                
               <div className="formitem">
-                  <span value={formData.sn} onChange={handleInputChange}></span>
                 <div className="input_label">
                   <label htmlFor="number">Number</label>
                   <input type="text" name="number" value={formData.number} className='sn' onChange={handleInputChange} />

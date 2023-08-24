@@ -1,8 +1,9 @@
 import React from "react";
 import "./Nav.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Nav() {
+  const location = useLocation(); 
   const confirmlogout = () => {
     const shouldlogout = window.confirm("Do you want to logout?")
     if (shouldlogout) {
@@ -17,38 +18,35 @@ export default function Nav() {
       <div className="navitem">
         <ul>
           <li>
-            <Link to="/home" className="link-class">
+            <Link to="/home" className={`link-class ${location.pathname === "/home" ? "active" : ""}`}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="/user" className="link-class">
+            <Link to="/user" className={`link-class ${location.pathname === "/user" ? "active" : ""}`}>
               User
-
             </Link>
           </li>
           <li>
-            <Link to="/organization" className="link-class">
-              Organization
+            <Link to="/organization" className={`link-class ${location.pathname === "/organization" ? "active" : ""}`}>
+              organization
+            </Link>
+          </li>
 
+          <li>
+          <Link to="/darta" className={`link-class ${location.pathname === "/darta" ? "active" : ""}`}>
+              darta
             </Link>
           </li>
           <li>
-            <Link to="/darta" className="link-class">
-              Darta
-
+          <Link to="/chalani" className={`link-class ${location.pathname === "/chalani" ? "active" : ""}`}>
+              chalani
             </Link>
+           
           </li>
           <li>
-            <Link to="/chalani" className="link-class">
-              Chalani
-
-            </Link>
-          </li>
-          <li>
-            <Link to="/storage" className="link-class">
-              Storage
-
+          <Link to="/storage" className={`link-class ${location.pathname === "/storage" ? "active" : ""}`}>
+            Storage
             </Link>
           </li>
           <li>
@@ -70,12 +68,11 @@ export default function Nav() {
           <div className="Loginas_admin">
             <span>Login as</span>
             <a href="#" className="admin">Admin </a>
-      
-         </div>
+
+          </div>
         </div>
       </div>
 
     </div>
   );
 }
- 
