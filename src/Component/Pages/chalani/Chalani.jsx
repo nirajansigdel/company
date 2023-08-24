@@ -55,11 +55,19 @@ export default function Chalani() {
     <Layout>
        <div className='main'>
       <div className="container">
-        <div className="add">
-          <button onClick={toggleform}>
-            <FaPlusSquare className='icon' />
-          </button>
+      <div className="search_add">
+        <div className='searching'>
+          <input type="text" placeholder='Searching' />
+          <button className='serching_done'>Search</button>
         </div>
+        <div className="addlist">
+        <button onClick={toggleform} className='addlist'>
+          ADDLIST
+        </button>
+        </div>
+     
+      </div>
+        
 
         <table border={1}>
           <thead>

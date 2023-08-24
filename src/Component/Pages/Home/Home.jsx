@@ -2,7 +2,6 @@ import React from 'react'
 import './Home.css'
 import { FaBuilding, FaFile, FaFileAlt, FaStoreAlt, FaUser } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import Nav from '../../Navbar/Nav';
 import Layout from '../../layout/Layout';
 export const Home = () => {
     const demo = [{

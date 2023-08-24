@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './darta_chalani.css';
-import { FaBackspace, FaPlusSquare } from "react-icons/fa";
+import { FaBackspace} from "react-icons/fa";
 import Layout from '../../layout/Layout';
 
 
@@ -66,10 +66,17 @@ export default function Darta() {
   return (
     <Layout>  <div className='main'>
     <div className="container">
-      <div className="add">
-        <button onClick={Openform}>
-          <FaPlusSquare className='icon' />
+      <div className="search_add">
+        <div className='searching'>
+          <input type="text" placeholder='Searching' />
+          <button className='serching_done'>Search</button>
+        </div>
+        <div className="addlist">
+        <button onClick={Openform} className='addlist'>
+          ADDLIST
         </button>
+        </div>
+     
       </div>
 
       <table border={1}>
@@ -118,13 +125,11 @@ export default function Darta() {
           <div className="popup-content">
             <form onSubmit={(e) => e.preventDefault()}>
               <div className="cancel" onClick={toggleform}>
-                <FaBackspace className='icon' />
+                <button>cancle</button>
+                {/* <FaBackspace className='icon' /> */}
               </div>
               <div className="formitem">
-                <div className="input_label">
-                  <label htmlFor="sn">S.N</label>
-                  <input type="text" name="sn" value={formData.sn} className='sn' onChange={handleInputChange} />
-                </div>
+                  <span value={formData.sn} onChange={handleInputChange}></span>
                 <div className="input_label">
                   <label htmlFor="number">Number</label>
                   <input type="text" name="number" value={formData.number} className='sn' onChange={handleInputChange} />

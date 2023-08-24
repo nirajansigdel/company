@@ -6,108 +6,83 @@
     display: flex;
     justify-content: space-between;
 }
- 
+
 .navbar {
     width: 100%;
     background-color: var(--primary);
     position: fixed;
-    padding: 0.8% ;
+    padding: 0.8%;
     align-items: center;
     justify-content: space-between;
 
 }
 
 .navbar .navitem {
-     width: 50%;
-     align-items: center;
+    width: 50%;
+    align-items: center;
 }
 
 .navbar .logo h1 {
-  
-    color: #2C3A64;
+    color:var(--secondary);
 }
+
+/*========= navlist========== */
 
 .navbar .navitem ul {
     list-style: none;
 }
-.navbar .navitem ul li a,.admin a {
+
+.navbar .navitem ul li a{
     text-decoration: none;
     font-family: var(--fontfamily);
-    font-size: 20px;
+    font-size: 22px;
     font-style: normal;
-}
-
-.navbar .navitem ul li a {
     color: var(--fontcolor);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 30px;
-
-
 }
 
 .navbar .navitem ul li a:hover {
     color: var(--dimcolor);
 }
 
-
-.navbar .user_menu {
+/* =======loginandlogout======= */
+.navbar .login_logout {
     width: 10%;
     align-items: center;
     display: flex;
     flex-direction: column;
-
-}
-.user{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    text-align: center;
-    flex-direction: column;
-    
 }
 
-.user_menu .image_user {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between; 
-    text-align: center;
-
-}
-
-.user_menu  .image_user .image {
-    width: 25px;
-    height: 25px;
-  
-}
-
-.user_menu .image_user .image img {
+.login_logout .Logoutdiv button {
+    background: var(--secondary);
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+    height: 5vh;
+    border: none;
+    border-radius: 8rem;
+    color: var(--textcolor);
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-.admin a {
-    color: #2C3A64;
-    font-weight: 600;
-
+.login_logout .Logoutdiv button:hover {
+    background: var(--hovercolor);
 }
-.logout{
-    display: none;
-}
-.arrowicon{
-    font-size: 24px;
-    color: var( --fon);
-}
-.admin {
-    display:  flex;
+.login_logout .Loginas_admin{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
+}
+.login_logout .admin{
+    padding-left: 0.1rem;
+    font-weight: 600;
+    color: var(--fontfamily);
+
 }
 
 @media only screen and (max-width: 1100px) {
-     .user {
+    .user {
         display: none;
     }
 
@@ -117,6 +92,6 @@
         padding: 8%;
         border-radius: 8px;
         color: var(--textcolor);
-      
+
     }
-  }
+}

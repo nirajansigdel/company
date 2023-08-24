@@ -1,17 +1,13 @@
 import React from "react";
 import "./Nav.css";
-import User from "./User.JPG";
-import {
-  FaArrowAltCircleRight,
-} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Nav() {
-  const confirmlogout=()=>{
-   const shouldlogout=window.confirm("Do you want to logout?")
-   if(shouldlogout){
-    window.location.href="/login"
-   }
+  const confirmlogout = () => {
+    const shouldlogout = window.confirm("Do you want to logout?")
+    if (shouldlogout) {
+      window.location.href = "/login"
+    }
   }
   return (
     <div className="navbar">
@@ -28,31 +24,31 @@ export default function Nav() {
           <li>
             <Link to="/user" className="link-class">
               User
-            
+
             </Link>
           </li>
           <li>
             <Link to="/organization" className="link-class">
               Organization
-          
+
             </Link>
           </li>
           <li>
             <Link to="/darta" className="link-class">
               Darta
-              
+
             </Link>
           </li>
           <li>
             <Link to="/chalani" className="link-class">
               Chalani
-            
+
             </Link>
           </li>
           <li>
             <Link to="/storage" className="link-class">
               Storage
-             
+
             </Link>
           </li>
           <li>
@@ -68,31 +64,18 @@ export default function Nav() {
           </li>
         </ul>
       </div>
-      <div className="user_menu">
-        <div className="user">
-        <div className="image_user">
-            <div className="image">
-              <img src={User} alt="" />
-            </div>
-            <div className="user">
-              <h4>User name</h4>
-            </div>
-            <div className="menu_icon">
-            <FaArrowAltCircleRight className="arrowicon" onClick={confirmlogout} />
+      <div className="login_logout">
+        <div className="Logoutdiv">
+          <button onClick={confirmlogout} className="LOGOUT" >LOGOut</button>
+          <div className="Loginas_admin">
+            <span>Login as</span>
+            <a href="#" className="admin">Admin </a>
+      
+         </div>
         </div>
-          </div>
-          <div className="admin">
-            <a href="#">admin</a>
-             Log in
-          </div>
-        </div>
-        
-          <div className="logout">
-            <span onClick={confirmlogout} >Log Out</span>
-          </div>
-
-        </div>
-       
       </div>
+
+    </div>
   );
 }
+ 

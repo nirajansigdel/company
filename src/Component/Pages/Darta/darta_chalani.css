@@ -1,65 +1,121 @@
 @import url('../../var/var.css');
 
 .main .container {
-    margin: 0  1% 0 0;
+    margin: 0 1% 0 0;
     display: flex;
     flex-direction: column;
 }
-.container .add {
+
+.container .search_add {
     display: flex;
-    justify-items: end;
-    justify-content: flex-end;
+    justify-content: space-around;
+    padding-top: 1%;
 
 }
 
+.addlist button {
+    background: lightgrey;
+    width: 8rem;
+    height: 5vh;
+    border: none;
+    border-radius: 8rem;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
-.container .add button {
-    background-color: var(--textcolor);
+.search_add .searching {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searching button {
+    width: 17%;
+    background-color: lightgray;
+    border-radius: 8rem;
+    border: none;
+    outline-color: none;
+    height: 4.6vh;
+    padding-left: 0.2%;
+
+}
+
+.container .search_add button:hover {
+    background: var(--hovercolor);
 }
 
 .container .add button .icon,
 .popup .popup-content form .cancel .icon {
     font-size: 1.7rem;
 }
-table {
+
+/* table {
     width: 100%;
-    margin-top: 20px;
     border-collapse: collapse;
     border: 1px solid black;
     padding-right: 5%;
-  }
-  
-  thead {
-    background:var(--textcolor);
-    margin:1%;
-  }
- 
-  tr td{
-    border: 1px solid black   ;
+  } */
 
-  }
-  th,
-  td {
+thead {
+    background: var(--textcolor);
+    margin: 1%;
+}
+
+tr td {
+    border: 1px solid black;
+
+}
+
+th,
+td {
     padding: 10px;
     text-align: center;
-    border: 1px solid  black   ;
-   
-   
-  }
-  
+    border: 1px solid black;
+
+
+}
+
+.cancel .cancle{
+    display: flex;
+    width: 100%;
+    justify-self: flex-end;
+}
 
 .popup {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
-    left: 17rem;
     height: 100%;
-    width:72%;
+    width: 96%;
     display: flex;
+    background-color: lightcyan;
+
+}
+
+form .formitem {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 4%;
+}
+
+form .formitem .input_label {
+    flex-basis: 20%;
+    box-sizing: border-box;
     justify-content: flex-start;
     align-items: flex-start;
-   
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 3px;
+}
 
-
+form .formitem .input_label input {
+    width: 700px;
+    border: none;
+    padding: 2% 0;
+    border-radius: 4px;
 
 
 }
@@ -75,6 +131,7 @@ table {
 
 }
 
+
 .popup .popup-content form {
     display: flex;
     gap: 20px;
@@ -87,26 +144,6 @@ table {
 .popup .popup-content form .formitem {
     display: flex;
     flex-wrap: wrap;
-
-}
-
-form .formitem .input_label {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 0.3% 0;
-    gap: 3px;
-}
-
-form .formitem .input_label input {
-    width: 90%;
-    border: none;
-    border-bottom: 1px solid beige;
-    padding: 2% 0;
-    border-radius: 4px;
-
 
 }
 
