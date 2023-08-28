@@ -92,10 +92,11 @@ padding-bottom: 1%;
 }
 
 .admin_body form .inputsection input:focus {
-    outline: none;
+ 
+    outline-color:var(--primary)
 }
 .admin_body form .inputsection input {
-    padding: 2% 0;
+    padding: 2.5% 0;
     border: none;
     border-radius: 2px;
     font-size: 1rem;

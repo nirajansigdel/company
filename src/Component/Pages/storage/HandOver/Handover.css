@@ -1,114 +1,229 @@
-/* Handover.css */
-@import url('../../../var/var.css');
-.main {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-  }
+@import url("../../../var/var.css");
+
+
+.container .startofhandoverpage .search_add {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 20px 0;
+}
+
+.startofhandoverpage .addlist button {
+  background: lightgrey;
+  width: 8rem;
+  padding: 9% 0;
+  border: none;
+  border-radius: 8rem;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.startofhandoverpage .searching .input {
+  color:var(--fontcolor);
+  border-radius: 4rem;
+  padding: 1.4%;
+}
+.startofhandoverpage .searching .input:focus{
+  outline: none;
+}
+
+.startofhandoverpage .search_add .searching {
+  display: flex;
+  justify-content: space-between;
+  color: var(--textcolor);
+  cursor: pointer;
+}
+
+.startofhandoverpage .searching button {
+  width: 20%;
+  background-color: lightgray;
+  border-radius: 8rem;
+  border: none;
+  outline-color: none;
+  padding:1.5% 0;
+  cursor: pointer;
+}
+.startofhandoverpage .searching input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 4px;
+  width: 40rem;
+  align-items: flex-start;
+  padding: 7px 0;
+}
+
+.container .startofhandoverpage .search_add button:hover {
+  background: var(--hovercolor);
+  color: var(--textcolor);
+}
+
+.container .startofhandoverpage .add button .icon,
+.startofhandoverpage .handoverpopup  .handoverpopup-body form .cancel .icon {
+  font-size: 1.7rem;
+}
+.startofhandoverpage .handoverpopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+.handoverpopup .handoverpopup_body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.handoverpopup_body form {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  gap: 20px;
+  padding: 2% 0;
   
-  .container{
-    padding: 5% 2% ;
-    width: 100%;
-    border-radius: 8px;
+}
+.handoverinputitem{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 2px solid black;
+  align-items: center;
+  padding: 1rem;
+}
+
+.startofhandoverpage label {
+  font-size: 14px;
+  color: var(--fontcolor);
+}
+
+.startofhandoverpage .section {
+  flex-basis: 20%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 1.5rem;
+  gap: 0.5vh;
+}
+
+.startofhandoverpage select,.startofhandoverpage input {
+  border: none;
+  padding: 3% 0;
+  border-radius: 4px;
+  width: 28rem;
+}
+
+.startofhandoverpage form {
+  display: flex;
+  gap: 20px;
+  padding: 1% 0;
+  object-fit: contain;
+}
+.startofhandoverpage form  input:focus {
+ outline-color:var(--primary)
+}
+
+.startofhandoverpage .formbutton {
+  width: 30%;
+}
 
 
-  }
-  input:focus{
-    outline: none;
-  }
-  
+.dstartofhandoverpage .formbutton button:hover {
+  background: var(--hovercolor);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 7px 0;
+}
 
-  .temporarybody_contain {
-    padding-top: 1%;
-    display: flex;
-    flex-direction: column;
+thead {
+  background: var(--textcolor);
+}
+tr td {
+  text-align: center;
+  border: 1px solid black;
+  padding:15px 0;
+  font-weight: 700;
+
+}
+
+.startofhandoverpage th,
+.startofhandoverpage td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+.startofhandoverpage .cancelbutton {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+}
+.startofhandoverpage .cancelbutton button {
+  background: red;
+  border-radius: 1rem;
+  color: var(--textcolor);
+  font-size: 1rem;
+  width: 15%;
+  border: none;
+  outline-color: none;
+  height: 5.1vh;
+  cursor: pointer;
+}
+.startofhandoverpage .cancelbutton button:hover {
+  border: 1px solid black;
+}
+
+.handoverapplybutton button{
+  width: 400px;
+  padding: 3.5% 0;
+  background: var(--secondary);
+  outline: none;
+  border: none;
+  color: var(--textcolor);
+  border-radius: 4px;
+  cursor: pointer;
  
- align-items: center;
-    justify-content: center;
-    background:var(--secondary);
-    padding-bottom: 1%;
-    
-  }
-  
-  .section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive styles
+@media screen and (max-width: 600px) {
+  .temporarybody_contain {
+    grid-template-columns: 1fr;
   }
-  
-  .label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type='text'],
-  select {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    width: 40rem;
-    align-items: flex-start;
-    
-    
-  }
-  
-  label {
-    font-size: 14px;
-    color: var(--fontcolor);
-  }
-  
-  .applybutton {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .sumbit {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-    border: 1px solid #ddd;
-  }
-  
-  thead {
-    background:var(--textcolor);
-    margin:1%
-    ;
-  }
-  
-  th,
-  td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
-   
-  }
-  
-  .temporary-cell {
-    background:var(--secondary);
-  }
-  
-  .permanent-cell {
-    background-color: green;
-  }
-  
-  /* Responsive styles */
-  @media screen and (max-width: 600px) {
-    .temporarybody_contain {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+} */

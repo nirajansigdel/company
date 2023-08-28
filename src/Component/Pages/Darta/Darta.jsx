@@ -66,6 +66,7 @@ export default function Darta() {
   return (
     <Layout>  <div className='main'>
     <div className="container">
+      <div className="dartachalanipagestart">
       <div className="search_add">
         <div className='searching'>
           <input type="text" placeholder='Searching' className='input'/>
@@ -182,15 +183,17 @@ export default function Darta() {
                   <input type="text" name='remark' className='remark' value={formData.remark} onChange={handleInputChange} />
                 </div>
               </div>
-           
-            </form>
-            <div className="formbutton">
+              <div className="formbutton">
                 <button type="submit" onClick={handleAddItem}>Apply</button>
               </div>
+           
+            </form>
+          
 
           </div>
         </div>
       )}
+    </div>
     </div>
   </div></Layout>
   
