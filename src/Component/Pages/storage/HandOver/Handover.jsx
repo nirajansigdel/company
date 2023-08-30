@@ -102,7 +102,7 @@ export default function Handover() {
                   <div className="handoverpopup_body">
                 <form>
                 <div className="cancelbutton">
-                <button  onClick={toggleform}>cancel</button>
+                <button  onClick={toggleform}>Cancel</button>
                 </div> 
                 <div className="handoverinputitem">
                   <div className="section">

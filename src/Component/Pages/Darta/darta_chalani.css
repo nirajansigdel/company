@@ -37,12 +37,15 @@
 
 .dartachalanipagestart .searching button {
   width: 20%;
-  background-color: lightgray;
+  background-color:white;
   border-radius: 8rem;
-  border: none;
+  border-color: blue;
   outline-color: none;
- padding:1.5% 0;
+ padding:1% 0;
   cursor: pointer;
+  color: black;
+  font-size: 20px;
+
 }
 .dartachalanipagestart .searching input {
   padding: 8px;
@@ -50,7 +53,7 @@
   border-radius: 4px;
   font-size: 16px;
   margin-right: 4px;
-  width: 40rem;
+  width: 30rem;
   align-items: flex-start;
 }
 

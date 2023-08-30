@@ -19,7 +19,7 @@
 }
 
 .navbar .navitem {
-    width: 50%;
+    min-width:800px;
     align-items: center;
 }
 

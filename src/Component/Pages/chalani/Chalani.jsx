@@ -60,7 +60,7 @@ export default function Chalani() {
               </div>
               <div className="addlist">
                 <button onClick={toggleform} className="addlist">
-                  ADDLIST
+                  Addlist
                 </button>
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function Chalani() {
                 <div className="chalani_popup-content">
                   <form onSubmit={(e) => e.preventDefault()}>
                     <div className="cancelbutton">
-                      <button onClick={toggleform}>cancel</button>
+                      <button onClick={toggleform}>Cancel</button>
                     </div>
                     <div className="formitem">
                     <div className="input_label">

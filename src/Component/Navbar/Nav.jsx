@@ -66,7 +66,7 @@ export default function Nav() {
       </div>
       <div className="login_logout">
         <div className="Logoutdiv">
-          <button onClick={confirmlogout} className="LOGOUT" >LOGOut</button>
+          <button onClick={confirmlogout} className="LOGOUT" >LOGOUT</button>
           <div className="Loginas_admin">
             <span>Login as</span>
             <a href="#" className="admin">Admin </a>

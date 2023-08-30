@@ -123,7 +123,7 @@ export default function Darta() {
                 <div className="popup-content">
                   <form onSubmit={(e) => e.preventDefault()}>
                     <div className="cancelbutton">
-                      <button onClick={toggleform}>cancel</button>
+                      <button onClick={toggleform}>Cancel</button>
                     </div>
 
                     <div className="formitem">
