@@ -1,13 +1,12 @@
 @import url("../../var/var.css");
 
 .main .container {
-  margin: 0 1% 0 0;
   flex-direction: column;
 }
   /* startof search section which contant searchinput ,searchbutton and addbutton */
 .container .dartachalanipagestart .search_add {
   justify-content: space-around;
-  padding: 10px 0 20px 0;
+  padding: 0 0 30px 0;
 }
 
 .dartachalanipagestart .addlist button {
@@ -151,7 +150,6 @@
 .dartachalanipagestart .formbutton button:hover {
   background: var(--hovercolor);
 }
-
 /*==================== start of table ===================================*/
 
 table {

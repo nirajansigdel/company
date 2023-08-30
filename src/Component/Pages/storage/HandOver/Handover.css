@@ -4,7 +4,7 @@
 .container .startofhandoverpage .search_add {
   display: flex;
   justify-content: space-around;
-  padding: 10px 0 20px 0;
+  padding: 0 0 30px 0;
 }
 
 .startofhandoverpage .addlist button {

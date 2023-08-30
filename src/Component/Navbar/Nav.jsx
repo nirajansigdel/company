@@ -11,6 +11,8 @@ export default function Nav() {
     }
   }
   return (
+    <div className="navmain">
+      <div className="navcontainer">
     <div className="navbar">
       <div className="logo">
         <h1>R.D.S</h1>
@@ -29,18 +31,18 @@ export default function Nav() {
           </li>
           <li>
             <Link to="/organization" className={`link-class ${location.pathname === "/organization" ? "active" : ""}`}>
-              organization
+              Organization
             </Link>
           </li>
 
           <li>
           <Link to="/darta" className={`link-class ${location.pathname === "/darta" ? "active" : ""}`}>
-              darta
+              Darta
             </Link>
           </li>
           <li>
           <Link to="/chalani" className={`link-class ${location.pathname === "/chalani" ? "active" : ""}`}>
-              chalani
+              Chalani
             </Link>
            
           </li>
@@ -72,7 +74,9 @@ export default function Nav() {
           </div>
         </div>
       </div>
+      </div>
 
+    </div>
     </div>
   );
 }

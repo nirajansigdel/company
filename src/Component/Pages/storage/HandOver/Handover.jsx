@@ -31,6 +31,7 @@ export default function Handover() {
     );
   };
   const submitHandler = () => {
+
     if (isAllFieldsFilled()) {
       console.log(getinput);
       setSubmittedData([...submittedData, getinput]);
@@ -43,7 +44,12 @@ export default function Handover() {
         approved: "",
         remark: "",
       });
-    } else {
+   setOpenHandOverForm(false);
+    }
+   
+    
+    
+    else {
       alert("Please fill in all the required fields.");
     }
   };

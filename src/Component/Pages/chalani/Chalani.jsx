@@ -108,6 +108,16 @@ export default function Chalani() {
                       <button onClick={toggleform}>cancel</button>
                     </div>
                     <div className="formitem">
+                    <div className="input_label">
+                        <label htmlFor="sn">S.N</label>
+                        <input
+                          type="text"
+                          name="number"
+                          value={formData.number}
+                          className="sn"
+                          onChange={handleInputChange}
+                        />
+                        </div>
                       <div className="input_label">
                         <label htmlFor="number">Number</label>
                         <input

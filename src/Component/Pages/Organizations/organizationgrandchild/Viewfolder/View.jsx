@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaEye, FaPlus } from 'react-icons/fa';
 import './view.css';
 
-export default function View() {
+const View =()=> {
     const nameofcontent = [
         {
             id: 1,
@@ -87,5 +87,7 @@ export default function View() {
         </div>
     );
 }
+
+export default View;
 
 

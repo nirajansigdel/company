@@ -1,9 +1,7 @@
  import React from 'react'
 import '../../../Commancss/Main.css'
-
 import { FaBuilding } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import Nav from '../../../Navbar/Nav';
 import Layout from '../../../layout/Layout';
  export default function Organization() {
   return (
