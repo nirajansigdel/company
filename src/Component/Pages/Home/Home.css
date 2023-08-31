@@ -102,7 +102,6 @@
 .card_content .icon {
     font-family: var(--fontfamily);
     font-style: normal;
-    font-weight: 400;
     color: var(--textcolor);
     cursor: pointer;
 }

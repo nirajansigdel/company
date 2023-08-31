@@ -55,7 +55,7 @@ export default function Registration() {
 
   return (
     <div className="Main">
-      <div className="Container">
+    <div className="Container">
         <div className="login_body">
           <div className="login">
             <h2>LOGIN </h2>
@@ -102,7 +102,8 @@ export default function Registration() {
             <Link to="/login">Login</Link>
           </form>
         </div>
-      </div>
-    </div>
+        </div>
+        </div>
+
   );
 }

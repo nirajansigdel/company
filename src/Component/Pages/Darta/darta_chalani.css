@@ -1,53 +1,51 @@
 @import url("../../../var/var.css");
 
-.main .container {
-  flex-direction: column;
-}
-  /* startof search section which contant searchinput ,searchbutton and addbutton */
-.container .dartachalanipagestart .search_add {
-  justify-content: space-around;
-  padding: 0 0 30px 0;
+.dartachalanipagestart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+width: 100%;
 }
 
-.dartachalanipagestart .addlist button {
-  background: lightgrey;
+
+
+  /* startof search section which contant searchinput ,searchbutton and addbutton */
+.dartachalanipagestart .search_add {
+  justify-content: space-around;
+  padding:0 0 30px 0;
+}
+
+.dartachalanipagestart .search_add button {
+  background:var(--secondary);
   width: 8rem;
-  padding: 9% 0;
+  padding: 1% 0;
   border: none;
   border-radius: 8rem;
-  color: black;
+  color: var(--textcolor);
   font-size: 1rem;
   cursor: pointer;
 }
-.dartachalanipagestart .searching .input {
+.dartachalanipagestart .search_add .input {
   color: var(--fontcolor);
   border-radius: 4rem;
   padding: 1.7% 1.4%;
 }
-.dartachalanipagestart .searching .input:focus{
+.dartachalanipagestart .input:focus{
   outline: none;
 }
+.dartachalanipagestart .search_add button:hover {
+  background: var(--hovercolor);
 
-.dartachalanipagestart .search_add .searching {
+}
+.dartachalanipagestart .search_add  {
   display: flex;
   justify-content: space-between;
   color: var(--textcolor);
   cursor: pointer;
 }
 
-.dartachalanipagestart .searching button {
-  width: 20%;
-  background-color:white;
-  border-radius: 8rem;
-  border-color: blue;
-  outline-color: none;
- padding:1% 0;
-  cursor: pointer;
-  color: black;
-  font-size: 20px;
-
-}
-.dartachalanipagestart .searching input {
+.dartachalanipagestart  input {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -182,7 +180,7 @@ th,
   outline-color: none;
 }
 .dartachalanipagestart .cancelbutton button {
-  background: red;
+  background:var(--secondary);
   border-radius: 1rem;
   color: var(--textcolor);
   font-size: 1rem;
@@ -190,7 +188,7 @@ th,
   height: 5.1vh;
 }
 .dartachalanipagestart .cancelbutton button:hover {
-  border: 1px solid black;
+ background-color: red;
 }
 .main .container,
 .container .dartachalanipagestart .search_add,

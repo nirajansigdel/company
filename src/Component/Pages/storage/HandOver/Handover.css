@@ -1,48 +1,47 @@
 @import url("../../../../var/var.css");
 
-
-.container .startofhandoverpage .search_add {
+.startofhandoverpage{
   display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+width: 100%;
+
+}
+.startofhandoverpage .search_add {
   justify-content: space-around;
-  padding: 0 0 30px 0;
+  padding:0 0 30px 0;
 }
 
 .startofhandoverpage .addlist button {
-  background: lightgrey;
+  /* background:var(--secondary); */
   width: 8rem;
-  padding: 9% 0;
+  padding: 1% 0;
   border: none;
   border-radius: 8rem;
-  color: black;
+  color: var(--textcolor);
   font-size: 1rem;
   cursor: pointer;
+  background-color: red;
 }
-.startofhandoverpage .searching .input {
+.startofhandoverpage  .input {
   color:var(--fontcolor);
   border-radius: 4rem;
   padding: 1.4%;
 }
-.startofhandoverpage .searching .input:focus{
+.startofhandoverpage .input:focus{
   outline: none;
 }
 
-.startofhandoverpage .search_add .searching {
+.startofhandoverpage .search_add {
   display: flex;
   justify-content: space-between;
   color: var(--textcolor);
   cursor: pointer;
 }
 
-.startofhandoverpage .searching button {
-  width: 20%;
-  background-color: lightgray;
-  border-radius: 8rem;
-  border: none;
-  outline-color: none;
-  padding:1.5% 0;
-  cursor: pointer;
-}
-.startofhandoverpage .searching input {
+
+.startofhandoverpage input {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;

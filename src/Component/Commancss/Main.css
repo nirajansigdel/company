@@ -1,11 +1,11 @@
 @import url('../../var/var.css');
 
-.container .child_card,.card_items{
+ .child_card,.card_items{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 100%;
 
   
 }
@@ -16,10 +16,12 @@
     padding:1% ;
 }
 .card_items{
+    font-size: 1.2rem;
     background: var(--secondary);
     height:20vh;
     border-radius: 1%;
     cursor: pointer;
+    font-family: var(--fontfamily);
 
 } 
 .card_items:hover{

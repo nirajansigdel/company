@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./darta_chalani.css";
-import { FaBackspace } from "react-icons/fa";
 import Layout from "../../layout/Layout";
 
 export default function Darta() {
@@ -61,21 +60,12 @@ export default function Darta() {
 
   return (
     <Layout>
-      {" "}
-      <div className="main">
-        <div className="container">
           <div className="dartachalanipagestart">
             <div className="search_add">
-              <div className="searching">
-
-                <input type="text" placeholder="Searching" className="input" />
-                <button className="serching_done">Search</button>
-              </div>
-              <div className="addlist">
-                <button onClick={Openform} className="addlist">
-                  ADDLIST
-                </button>
-              </div>
+              <input type="text" placeholder="Searching" className="input" />
+              <button onClick={Openform} className="addlist">
+                Addlist
+              </button>
             </div>
 
             <table border={1}>
@@ -284,8 +274,7 @@ export default function Darta() {
               </div>
             )}
           </div>
-        </div>
-      </div>
+    
     </Layout>
   );
 }

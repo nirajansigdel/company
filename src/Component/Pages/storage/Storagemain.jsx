@@ -6,8 +6,6 @@ import Layout from '../../layout/Layout';
 export default function Storage() {
   return (
     <Layout>
-       <div className="main">
-      <div className='container'>
         <div className="child_card">
           <div className="cards">
             <Link to='/bulk' className="card_items">
@@ -23,10 +21,6 @@ export default function Storage() {
           </Link>
 
         </div>
-
-
-      </div>
-    </div>
     </Layout>
    
   )

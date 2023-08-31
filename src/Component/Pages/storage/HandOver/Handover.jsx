@@ -78,24 +78,13 @@ export default function Handover() {
 
   return (
     <Layout>
-      <div className="main">
-        <div className="container">
           <div className="startofhandoverpage">
-              <div className="search_add">
-                <div className="searching">
-                  <input
-                    type="text"
-                    placeholder="Searching"
-                    className="input"
-                  />
-                  <button className="serching_done">Search</button>
-                </div>
-                <div className="addlist">
-                  <button onClick={handOverForm} className="addlist">
-                    ADDLIST
-                  </button>
-                </div>
-              </div>
+          <div className="search_add">
+              <input type="text" placeholder="Searching" className="input" />
+              <button onClick={handOverForm } className="addlist">
+                Addlist
+              </button>
+            </div>
 
               {openHandOverForm && (
                 <div className="handoverpopup">
@@ -188,7 +177,7 @@ export default function Handover() {
                 </div>
                 </div>
               )}
-            </div>
+          
 
             <table border={1}>
               <thead>
@@ -224,8 +213,7 @@ export default function Handover() {
                 ))}
               </tbody>
             </table>
-          </div>
-        </div>
+            </div>
     </Layout>
   );
 }

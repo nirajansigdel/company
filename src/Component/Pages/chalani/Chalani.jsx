@@ -50,20 +50,13 @@ export default function Chalani() {
 
   return (
     <Layout>
-      <div className="main">
-        <div className="container">
           <div className="dartachalanipagestart">
             <div className="search_add">
-              <div className="searching">
                 <input type="text" placeholder="Searching" className="input" />
-                <button className="serching_done">Search</button>
-              </div>
-              <div className="addlist">
                 <button onClick={toggleform} className="addlist">
                   Addlist
                 </button>
               </div>
-            </div>
 
             <table border={1}>
               <thead>
@@ -234,8 +227,6 @@ export default function Chalani() {
               </div>
             )}
           </div>
-        </div>
-      </div>
     </Layout>
   );
 }
