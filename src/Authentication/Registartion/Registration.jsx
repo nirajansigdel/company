@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../Component/Login/login.css";
-import login from "../Component/Login/Login.png";
+import "../Login/login.css";
+import login from "../Login/Login.png";
 import axios from "axios";
 import { Link } from "react-router-dom";
 

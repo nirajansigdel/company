@@ -4,44 +4,45 @@ import { FaBuilding, FaFile, FaFileAlt, FaStoreAlt, FaUser } from "react-icons/f
 import { Link } from 'react-router-dom';
 import Layout from '../../layout/Layout';
 export const Home = () => {
-    const demo = [{
-        id: 1,
-        icon: <FaUser />,
-        name: "User",
-        to: "/user",
-    },
-
+    const demo = [
     {
-        id: 2,
+        id: 1,
         icon: <FaBuilding />,
         name: "Organization",
         to: "/organization",
     },
     {
-        id: 3,
+        id: 2,
         icon: <FaFileAlt />,
         name: "Darta",
         to: "/darta",
 
     },
     {
-        id: 4,
+        id: 3,
         icon: <FaFile />,
         name: "Chalani",
         to: "/chalani",
     },
     {
-        id: 5,
+        id: 4,
         icon: <FaStoreAlt />,
         name: "Storage",
         to: "/storage",
     }, 
     {
-        id: 6,
+        id: 5,
         icon: <FaStoreAlt />,
         name: "Report",
         to: "/user",
     },
+    {
+        id: 6,
+        icon: <FaUser />,
+        name: "User",
+        to: "/user",
+    },
+
     {
         id: 7,
         icon: <FaStoreAlt />,
@@ -50,7 +51,6 @@ export const Home = () => {
     }]
     return (
         <Layout>
-              <div className='main'>
             {/*=================== container (dashboard)==================== */}
             <div className="container">
                 {/*=================== dashboard(description,card)==================== */}
@@ -95,8 +95,6 @@ export const Home = () => {
                 </div>
             </div>
 
-
-        </div>
         </Layout>
       
     )

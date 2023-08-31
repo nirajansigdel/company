@@ -67,7 +67,7 @@ export default function Darta() {
           <div className="dartachalanipagestart">
             <div className="search_add">
               <div className="searching">
-                <p>hello  world</p>
+
                 <input type="text" placeholder="Searching" className="input" />
                 <button className="serching_done">Search</button>
               </div>

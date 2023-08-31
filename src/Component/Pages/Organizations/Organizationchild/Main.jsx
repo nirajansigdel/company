@@ -6,7 +6,6 @@ import Layout from '../../../layout/Layout';
  export default function Organization() {
   return (
     <Layout>
-       <div className="main">
     <div className='container'>
       <div className="child_card">
        <Link  to='/corporate' className="cards" >
@@ -32,7 +31,6 @@ import Layout from '../../../layout/Layout';
         
 
         </div>
-    </div>
     </Layout>
    
   )

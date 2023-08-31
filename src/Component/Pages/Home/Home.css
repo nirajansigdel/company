@@ -1,29 +1,20 @@
-@import url('../../var/var.css');
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url('../../../var/var.css');
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
-.main {
-    background-color: var(--primary);
-}
-
-
-.main .container {
-    padding: 6.5% 0 0 3%;
+.container .dashboard {
+    gap: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.main .container .dashboard {
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.main .container .dashboard .description {
+ .container .dashboard .description {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -44,7 +35,7 @@
     color: var(--dimcolor);
 }
 
-.main .container .dashboard .card {
+.container .dashboard .card {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -52,7 +43,7 @@
 
 
 }
-.main .container .dashboard .card .card_body {
+.container .dashboard .card .card_body {
     display: flex;
     flex-flow: row wrap;
     gap: 2vh;
@@ -62,16 +53,16 @@
    
 }
 
-.main .container .dashboard .card .card_body .card_item {
+ .container .dashboard .card .card_body .card_item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 22rem;
+    width: 17rem;
 
 
 }
-.main .container .dashboard .card .card_item .card_content{
+ .container .dashboard .card .card_item .card_content{
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -115,12 +106,4 @@
     color: var(--textcolor);
     cursor: pointer;
 }
-@media only screen and (max-width: 1100px) {
-    .main .container{
-        padding:5% 0 0 0 ;
-    }
-    
-    .choosefor{
-display: none;
-    }
-  }
+

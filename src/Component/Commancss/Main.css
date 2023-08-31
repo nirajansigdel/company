@@ -1,10 +1,11 @@
-@import url('../var/var.css');
+@import url('../../var/var.css');
 
 .container .child_card,.card_items{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 500px;
 
   
 }

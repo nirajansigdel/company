@@ -1,6 +1,7 @@
 import React from "react";
 import "./Nav.css";
 import { Link, useLocation } from "react-router-dom";
+import { FaUserAlt } from "react-icons/fa";
 
 export default function Nav() {
   const location = useLocation(); 
@@ -11,8 +12,6 @@ export default function Nav() {
     }
   }
   return (
-    <div className="navmain">
-      <div className="navcontainer">
     <div className="navbar">
       <div className="logo">
         <h1>R.D.S</h1>
@@ -24,11 +23,7 @@ export default function Nav() {
               Home
             </Link>
           </li>
-          <li>
-            <Link to="/user" className={`link-class ${location.pathname === "/user" ? "active" : ""}`}>
-              User
-            </Link>
-          </li>
+         
           <li>
             <Link to="/organization" className={`link-class ${location.pathname === "/organization" ? "active" : ""}`}>
               Organization
@@ -57,6 +52,11 @@ export default function Nav() {
             </Link>
           </li>
           <li>
+            <Link to="/user" className={`link-class ${location.pathname === "/user" ? "active" : ""}`}>
+              User
+            </Link>
+          </li>
+          <li>
             <Link to="./" className="link-class">
               Other
 
@@ -64,19 +64,10 @@ export default function Nav() {
           </li>
         </ul>
       </div>
-      <div className="login_logout">
-        <div className="Logoutdiv">
-          <button onClick={confirmlogout} className="LOGOUT" >LOGOUT</button>
-          <div className="Loginas_admin">
-            <span>Login as</span>
-            <a href="#" className="admin">Admin </a>
-
-          </div>
+      <div className="logout_admin">
+         <FaUserAlt className="logout" onClick={confirmlogout}/>
+         <h4>Admin</h4>
         </div>
       </div>
-      </div>
-
-    </div>
-    </div>
   );
 }

@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./Component/Pages/Home/Home";
-import Login from "./Component/Login/Login";
 import Employer from "./Component/Pages/Users/Employer/Employer";
 import Darta from './Component/Pages/Darta/Darta'
 import Chalani from './Component/Pages/chalani/Chalani';
@@ -10,10 +9,11 @@ import Setlevel from "./Component/Pages/Users/setlevel";
 import Bulk from "./Component/Pages/storage/Bulk/Bulk";
 import Resetlevel from "./Component/Pages/Users/Resetlevel";
 import Handover from "./Component/Pages/storage/HandOver/Handover";
-import Registration from "./Registartion/Registration";
 import Storage from "./Component/Pages/storage/Storagemain"
 import View from "./Component/Pages/Organizations/organizationgrandchild/Viewfolder/View";
 import Corporate from "./Component/Pages/Organizations/organizationgrandchild/Coporatefolder/Coporatefile";
+import Login from "./Authentication/Login/Login";
+import Registration from "./Authentication/Registartion/Registration";
 
 
 function App() {
