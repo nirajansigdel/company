@@ -1,5 +1,7 @@
 @import url('../.././var/var.css');
 
+
+/* main has (conatiner) ,container has (login_body) ,login_body has (login,image portion ,form ) */
 .Main,
 .Main .Container,
 .login_body,
@@ -50,6 +52,8 @@ form {
 
 }
 
+
+/* input section */
 .Main .Container .login_body form .inputsection {
     width: 90%;
     display: flex;
@@ -57,6 +61,7 @@ form {
     gap: 4px
 }
 
+/* input section label */
 .Main .Container .login_body form .inputsection label {
     color: var(--fontcolor);
     font-family: "Poppins";
@@ -80,12 +85,8 @@ form {
     outline: none;
 }
 
-.Main .Container .login_body form .inputsection p {
-    cursor: pointer;
-    color: var(--dimcolor);
-    text-decoration: underline;
-}
 
+/* button design */
 .Main .Container .login_body form .inputsection button {
     background: var(--secondary);
     border-radius: 0.3rem;
@@ -96,9 +97,15 @@ form {
     width: 100%;
 
 }
-
+/* button hover */
 .Main .Container .login_body form .inputsection button:hover {
     background: var(--hovercolor);
 
-
 }
+
+/* 
+.Main .Container .login_body form .inputsection p {
+    cursor: pointer;
+    color: var(--dimcolor);
+    text-decoration: underline;
+} */

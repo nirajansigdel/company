@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
 }
+/* container has (dashboard) */
 .container .dashboard {
     gap: 2rem;
     display: flex;
@@ -13,7 +14,8 @@
     justify-content: center;
     align-items: center;
 }
-
+/* dashboard(description,card) */ 
+/* start of description */
  .container .dashboard .description {
     display: flex;
     flex-direction: column;
@@ -35,6 +37,8 @@
     color: var(--dimcolor);
 }
 
+/* start of  card */
+
 .container .dashboard .card {
     width: 100%;
     display: flex;
@@ -43,16 +47,15 @@
 
 
 }
+/*card has (card_body) */ 
+/* :start of card_body */
 .container .dashboard .card .card_body {
     display: flex;
     flex-flow: row wrap;
     gap: 2vh;
-
-
-
    
 }
-
+/* card-Body has (card_item) */ 
  .container .dashboard .card .card_body .card_item {
     display: flex;
     flex-direction: column;
@@ -62,6 +65,7 @@
 
 
 }
+/* card_item has (card_content) */ 
  .container .dashboard .card .card_item .card_content{
    display: flex;
    flex-direction: column;
@@ -91,13 +95,13 @@
     font-size: 2rem;
 
 }
-
+/* card name  */
 .card_item .card_content .name {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
 
 }
-
+/* card name and */
 .card_body .card_item .card_content .name,
 .card_content .icon {
     font-family: var(--fontfamily);

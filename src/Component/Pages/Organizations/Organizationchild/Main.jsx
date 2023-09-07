@@ -6,6 +6,8 @@ import Layout from '../../../layout/Layout';
  export default function Organization() {
   return (
     <Layout>
+
+      {/* start of Organization has filed corporate, employer and Registarrtion */}
     <div className='container'>
       <div className="child_card">
        <Link  to='/corporate' className="cards" >

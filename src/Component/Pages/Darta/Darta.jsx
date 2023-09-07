@@ -61,13 +61,14 @@ export default function Darta() {
   return (
     <Layout>
           <div className="dartachalanipagestart">
+              {/*  searching input and addlist button*/}
             <div className="search_add">
               <input type="text" placeholder="Searching" className="input" />
               <button onClick={Openform} className="addlist">
                 Addlist
               </button>
             </div>
-
+{/* start of table */}
             <table border={1}>
               <thead>
                 <tr>
@@ -87,6 +88,7 @@ export default function Darta() {
                   <th className="s_n_d_m">Remark</th>
                 </tr>
               </thead>
+              {/* ====table body==== */}
               <tbody>
                 {tableData.map((item, index) => (
                   <tr key={index}>
@@ -116,8 +118,9 @@ export default function Darta() {
                     <div className="cancelbutton">
                       <button onClick={toggleform}>Cancel</button>
                     </div>
-
+                    {/* start of formitem */}
                     <div className="formitem">
+                      {/* input_label has label and input */}
                       <div className="input_label">
                         <label htmlFor="sn">S.N</label>
                         <input
@@ -139,6 +142,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+
                       <div className="input_label">
                         <label htmlFor="date">Date</label>
                         <input
@@ -149,6 +153,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+
                       <div className="input_label">
                         <label htmlFor="miti">Miti</label>
                         <input
@@ -159,6 +164,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+
                       <div className="input_label">
                         <label htmlFor="totalReceivedLetter">
                           Total received lettter
@@ -171,6 +177,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+
                       <div className="input_label">
                         <label htmlFor="receivedDate">Received Date</label>
                         <input
@@ -181,6 +188,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+
                       <div className="input_label">
                         <label htmlFor="letterIssueCompany">
                           Letter issus company
@@ -193,6 +201,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+
                       <div className="input_label">
                         <label htmlFor="officeRefNo">office Ref No</label>
                         <input
@@ -203,6 +212,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+
                       <div className="input_label">
                         <label htmlFor="subject">Subject</label>
                         <input
@@ -213,6 +223,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+
                       <div className="input_label">
                         <label htmlFor="previousRefNo">Previous ref num</label>
                         <input
@@ -223,6 +234,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+
                       <div className="input_label">
                         <label htmlFor="name">Name</label>
                         <input
@@ -233,6 +245,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+
                       <div className="input_label">
                         <label htmlFor="signature">Signature</label>
                         <input
@@ -243,6 +256,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+
                       <div className="input_label">
                         <label htmlFor="checkerdate">date</label>
                         <input
@@ -253,6 +267,7 @@ export default function Darta() {
                           onChange={handleInputChange}
                         />
                       </div>
+                      
                       <div className="input_label">
                         <label htmlFor="remark">Remark</label>
                         <input
@@ -264,12 +279,15 @@ export default function Darta() {
                         />
                       </div>
                     </div>
+
+                   {/* applybutton  after input insert*/}
                     <div className="formbutton">
                       <button type="submit" onClick={handleAddItem}>
                         Apply
                       </button>
                     </div>
                   </form>
+                  {/* end of form */}
                 </div>
               </div>
             )}

@@ -32,16 +32,18 @@ export const Home = () => {
     }, 
     {
         id: 5,
-        icon: <FaStoreAlt />,
-        name: "Report",
-        to: "/user",
-    },
-    {
-        id: 6,
         icon: <FaUser />,
         name: "User",
         to: "/user",
     },
+
+    {
+        id: 6,
+        icon: <FaStoreAlt />,
+        name: "Report",
+        to: "/user",
+    },
+   
 
     {
         id: 7,

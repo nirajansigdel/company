@@ -12,10 +12,13 @@ export default function Nav() {
     }
   }
   return (
+    // navbar div Contain(logo, navitem,logout admin)
     <div className="navbar">
+      {/* ==========logo==================== */}
       <div className="logo">
         <h1>R.D.S</h1>
       </div>
+        {/* ==========navitem==================== */}
       <div className="navitem">
         <ul>
           <li>
@@ -47,15 +50,16 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="./" className="link-class">
-              Report
-            </Link>
-          </li>
-          <li>
             <Link to="/user" className={`link-class ${location.pathname === "/user" ? "active" : ""}`}>
               User
             </Link>
           </li>
+          <li>
+            <Link to="./" className="link-class">
+              Report
+            </Link>
+          </li>
+        
           <li>
             <Link to="./" className="link-class">
               Other
@@ -64,6 +68,7 @@ export default function Nav() {
           </li>
         </ul>
       </div>
+        {/* ==========logout admin  has (logout icon ,h4)==================== */}
       <div className="logout_admin">
          <FaUserAlt className="logout" onClick={confirmlogout}/>
          <h4>Admin</h4>

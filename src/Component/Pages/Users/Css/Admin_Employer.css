@@ -1,5 +1,10 @@
 @import url(../../../../var/var.css);
 
+.adminstart{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
 .admin_profile .user .userdescription .userimage {
     width: 60px;

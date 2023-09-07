@@ -1,71 +1,54 @@
 @import url("../../../var/var.css");
 
-.dartachalanipagestart{
+.dartachalanipagestart {
   display: flex;
   justify-content: center;
   align-items: center;
-flex-direction: column;
-width: 100%;
+  flex-direction: column;
+  width: 100%;
+}
+.dartachalanipagestart button:hover {
+  background-color: red !important;
 }
 
-
-
-  /* startof search section which contant searchinput ,searchbutton and addbutton */
+/* startof search section which contant searchinput ,searchbutton and addbutton */
 .dartachalanipagestart .search_add {
   justify-content: space-around;
-  padding:0 0 30px 0;
-}
-
-.dartachalanipagestart .search_add button {
-  background:var(--secondary);
-  width: 8rem;
-  padding: 1% 0;
-  border: none;
-  border-radius: 8rem;
-  color: var(--textcolor);
-  font-size: 1rem;
-  cursor: pointer;
-}
-.dartachalanipagestart .search_add .input {
-  color: var(--fontcolor);
-  border-radius: 4rem;
-  padding: 1.7% 1.4%;
-}
-.dartachalanipagestart .input:focus{
-  outline: none;
-}
-.dartachalanipagestart .search_add button:hover {
-  background: var(--hovercolor);
-
-}
-.dartachalanipagestart .search_add  {
+  padding: 0 0 30px 0;
   display: flex;
   justify-content: space-between;
   color: var(--textcolor);
   cursor: pointer;
 }
 
-.dartachalanipagestart  input {
-  padding: 8px;
+.dartachalanipagestart .search_add .input {
+  color: var(--fontcolor);
+  border-radius: 4rem;
+  height: 5.7vh;
+  padding: 0 0 0 7px;
   border: 1px solid #ccc;
-  border-radius: 4px;
   font-size: 16px;
   margin-right: 4px;
-  width: 30rem;
-  align-items: flex-start;
+  width: 25rem;
 }
-
-.container .dartachalanipagestart .search_add button:hover {
-  background: var(--hovercolor);
+.dartachalanipagestart .input:focus {
+  outline: none;
+}
+.dartachalanipagestart .search_add button {
+  background: var(--secondary);
+  width: 8rem;
+  height: 5.5vh;
+  border: none;
+  border-radius: 8rem;
   color: var(--textcolor);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.dartachalanipagestart .search_add button:hover {
+  background: var(--hovercolor);
 }
 
-.container .dartachalanipagestart .add button .icon,
-.dartapagestart .popup .popup-content form .cancel .icon {
-  font-size: 1.7rem;
-}
-
- /* when form is popup after click add */
+/* when form is popup after click add */
 
 .popup,
 .popup .popup-content,
@@ -99,7 +82,7 @@ width: 100%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   border: 2px solid black;
   padding: 1rem;
 }
@@ -120,11 +103,13 @@ width: 100%;
   gap: 0.5vh;
 }
 
-.dartachalanipagestart form .formitem .input_label input {
+.dartachalanipagestart .formitem .input_label input {
   border: none;
-  padding: 3% 0;
+  height: 5.5vh;
   border-radius: 4px;
-  width: 28rem;
+  width: 25rem;
+  padding-left: 6px;
+  font-size: 18px;
 }
 
 .dartachalanipagestart .popup .popup-content form {
@@ -135,6 +120,38 @@ width: 100%;
 .dartachalanipagestart form .formitem .input_label input:focus {
   outline-color: var(--primary);
 }
+/*start of cancel button */
+.dartachalanipagestart .cancelbutton {
+  justify-content: flex-end;
+  width: 70%;
+}
+.dartachalanipagestart .cancelbutton button,
+.dartachalanipagestart .formbutton button {
+  cursor: pointer;
+  border: none;
+  outline-color: none;
+}
+.dartachalanipagestart .cancelbutton button {
+  background: var(--secondary);
+  border-radius: 1rem;
+  color: var(--textcolor);
+  font-size: 1rem;
+  width: 15%;
+  height: 5.1vh;
+}
+.dartachalanipagestart .cancelbutton button:hover {
+  background-color: red;
+}
+
+.dartachalanipagestart .search_add,
+.dartachalanipagestart .cancelbutton,
+.dartachalanipagestart .formitem,
+.dartachalanipagestart .popup .popup-content form,
+.dartachalanipagestart .formitem .input_label {
+  display: flex;
+}
+
+/* apply button after input  */
 
 .dartachalanipagestart .formbutton {
   width: 30%;
@@ -148,7 +165,7 @@ width: 100%;
   border-radius: 4px;
 }
 
-.dartachalanipagestart .formbutton button:hover {
+.dartachalanipagestart form .formbutton button:hover {
   background: var(--hovercolor);
 }
 /*==================== start of table ===================================*/
@@ -167,34 +184,5 @@ th,
 .dartachalanipagestart td {
   text-align: center;
   border: 1px solid black;
-  padding:15px 0
-}
-.dartachalanipagestart .cancelbutton {
-  justify-content: flex-end;
-  width: 70%;
-}
-.dartachalanipagestart .cancelbutton button,
-.dartachalanipagestart .formbutton button {
-  cursor: pointer;
-  border: none;
-  outline-color: none;
-}
-.dartachalanipagestart .cancelbutton button {
-  background:var(--secondary);
-  border-radius: 1rem;
-  color: var(--textcolor);
-  font-size: 1rem;
-  width: 15%;
-  height: 5.1vh;
-}
-.dartachalanipagestart .cancelbutton button:hover {
- background-color: red;
-}
-.main .container,
-.container .dartachalanipagestart .search_add,
-.dartachalanipagestart .cancelbutton,
-.dartachalanipagestart form .formitem,
-.dartachalanipagestart .popup .popup-content form,
-.dartachalanipagestart form .formitem .input_label {
-  display: flex;
+  padding: 15px 0;
 }

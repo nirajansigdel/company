@@ -5,9 +5,9 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 export default function Login() {
-  const [getusername, setusername] = useState();
-  const [getpassword, setpassword] = useState();
-  const [getlogged, setlogged] = useState(false);
+  const [getusername, setusername] = useState();//to get username
+  const [getpassword, setpassword] = useState();//to get password
+  const [getlogged, setlogged] = useState(false);//for login
 
   const applylogin = async () => {
     try {
@@ -30,11 +30,14 @@ export default function Login() {
   }
 
   return (
+    // main has (conatiner) ,container has (login_body) ,login_body has (login,image portion ,form )
     <div className="Main">
       <div className="Container">
         <div className="login_body">
           <div className="login">
             <h2>LOGIN </h2>
+
+            {/* input filed for username and password */}
             <div className="imageportion">
               <img src={login} alt="image" />
             </div>
@@ -58,11 +61,15 @@ export default function Login() {
                 onChange={(e) => setpassword(e.target.value)}
               />
             </div>
+
+            {/* =================login button======================= */}
             <div className="inputsection">
               <button type="button" onClick={applylogin}>
                 Login
               </button>
             </div>
+
+            {/* ====================== forget button======================= */}
             <Link>Forget Password</Link>
           </form>
         </div>

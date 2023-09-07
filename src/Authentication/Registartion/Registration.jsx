@@ -5,10 +5,10 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 export default function Registration() {
-  const [getemail, setemail] = useState();
-  const [getusername, setusername] = useState();
-  const [getpassword, setpassword] = useState();
-  const [getlogged, setlogged] = useState(false);
+  const [getemail, setemail] = useState(); //to get email
+  const [getusername, setusername] = useState(); //to get username
+  const [getpassword, setpassword] = useState(); //to get password
+  const [getlogged, setlogged] = useState(false); //for login
 
   const applyregistration = async () => {
     try {
@@ -54,8 +54,9 @@ export default function Registration() {
   }
 
   return (
+    // main has (conatiner) ,container has (login_body) ,login_body has (login,image portion ,form )
     <div className="Main">
-    <div className="Container">
+      <div className="Container">
         <div className="login_body">
           <div className="login">
             <h2>LOGIN </h2>
@@ -64,6 +65,7 @@ export default function Registration() {
             </div>
           </div>
           <form>
+            {/* input filed for username and password */}
             <div className="inputsection">
               <label htmlFor="email">Email</label>
               <input
@@ -94,16 +96,17 @@ export default function Registration() {
                 autocomplete="off"
               />
             </div>
+            {/* =================Registartion button======================= */}
             <div className="inputsection">
               <button type="button" onClick={applyregistration}>
                 Registration
               </button>
             </div>
+            {/* =================login path======================= */}
             <Link to="/login">Login</Link>
           </form>
         </div>
-        </div>
-        </div>
-
+      </div>
+    </div>
   );
 }

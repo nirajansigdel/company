@@ -15,9 +15,7 @@ export default function Setlevel() {
 
   return (
     <Layout>
-     <div className="main">
-     <div className="container">
-        <div className="body">
+        <div className="adminstart">
           <div className="grandchild">
             <div className="grandchild_body">
               <div
@@ -59,8 +57,7 @@ export default function Setlevel() {
             {activeLevel === 'level4' && <Level4 />}
           </div>
         </div>
-      </div>
-    </div>
+  
     </Layout>
   );
 }

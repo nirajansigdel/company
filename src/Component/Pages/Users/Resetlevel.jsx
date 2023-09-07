@@ -15,9 +15,7 @@ export default function Resetlevel() {
 
   return (
     <Layout>
-    <div className="main">
-      <div className="container">
-        <div className="body">
+        <div className="adminstart">
           <div className="grandchild">
             <div className="grandchild_body">
               <div to='/reset' 
@@ -59,8 +57,7 @@ export default function Resetlevel() {
             {activeLevel === 'Resetlevel4' && <ResetLevel4 />}
           </div>
         </div>
-      </div>
-    </div>
+
     </Layout>
   );
 }
