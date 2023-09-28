@@ -22,7 +22,7 @@
     align-items: center;
     padding: 1.7rem 0;
     color: var(--textcolor);
-    background-color: #495883;
+    background:var(--primary);
     border-radius: 0.2rem;
     cursor: pointer;
     border: none;

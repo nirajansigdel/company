@@ -86,6 +86,7 @@ export default function Darta() {
                   <th className="s_n_d_m">Signature</th>
                   <th className="s_n_d_m">Date</th>
                   <th className="s_n_d_m">Remark</th>
+                  <th className="s_n_d_m">Upload File</th>
                 </tr>
               </thead>
               {/* ====table body==== */}
@@ -276,6 +277,13 @@ export default function Darta() {
                           className="remark"
                           value={formData.remark}
                           onChange={handleInputChange}
+                        />
+                      </div>
+                      <div className="input_label">
+                        <label htmlFor="remark">File Upload</label>
+                        <input
+                          type="file"
+                          
                         />
                       </div>
                     </div>

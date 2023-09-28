@@ -7,9 +7,7 @@
   flex-direction: column;
   width: 100%;
 }
-.dartachalanipagestart button:hover {
-  background-color: red !important;
-}
+
 
 /* startof search section which contant searchinput ,searchbutton and addbutton */
 .dartachalanipagestart .search_add {
@@ -78,13 +76,13 @@
   background: var(--primary);
 }
 .dartachalanipagestart form .formitem {
-  width: 70%;
+  width: 68%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   border: 2px solid black;
-  padding: 1rem;
+  padding: 0.7rem 2rem;
 }
 
 .dartachalanipagestart label {
@@ -105,7 +103,7 @@
 
 .dartachalanipagestart .formitem .input_label input {
   border: none;
-  height: 5.5vh;
+  height: 5vh;
   border-radius: 4px;
   width: 25rem;
   padding-left: 6px;
@@ -114,7 +112,7 @@
 
 .dartachalanipagestart .popup .popup-content form {
   gap: 20px;
-  padding: 1% 0;
+  padding: 4px 0;
   object-fit: contain;
 }
 .dartachalanipagestart form .formitem .input_label input:focus {
@@ -137,10 +135,10 @@
   color: var(--textcolor);
   font-size: 1rem;
   width: 15%;
-  height: 5.1vh;
+  height: 5vh;
 }
 .dartachalanipagestart .cancelbutton button:hover {
-  background-color: red;
+  background: red;
 }
 
 .dartachalanipagestart .search_add,
@@ -159,7 +157,7 @@
 
 .dartachalanipagestart .formbutton button {
   width: 100%;
-  padding: 3.5% 0;
+  padding:15px 0;
   background: var(--secondary);
   color: var(--textcolor);
   border-radius: 4px;

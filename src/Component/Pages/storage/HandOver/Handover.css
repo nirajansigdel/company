@@ -83,7 +83,7 @@
   background: var(--hovercolor);
 }
 .handoverpopup button:hover {
- background-color:red;
+ background:red;
 }
 
 /*start of from */
